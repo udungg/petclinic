@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd" xmlns="http://maven.apache.org/SETTINGS/1.1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <servers>
+    <server>
+      <username>admin</username>
+      <password>APA6cYKtqR5ZtjYctQ2CdQexaxq</password>
+      <id>central</id>
+    </server>
+    <server>
+      <username>admin</username>
+      <password>APA6cYKtqR5ZtjYctQ2CdQexaxq</password>
+      <id>snapshots</id>
+    </server>
+  </servers>
+  <profiles>
+    <profile>
+      <repositories>
+        <repository>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>central</id>
+          <name>petclinic-release-virtual</name>
+          <url>http://192.168.74.150:8081/artifactory/petclinic-release-virtual</url>
+        </repository>
+        <repository>
+          <snapshots />
+          <id>snapshots</id>
+          <name>petclinic-snapshot-virtual</name>
+          <url>http://192.168.74.150:8081/artifactory/petclinic-snapshot-virtual</url>
+        </repository>
+      </repositories>
+      <pluginRepositories>
+        <pluginRepository>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>central</id>
+          <name>petclinic-release-virtual</name>
+          <url>http://192.168.74.150:8081/artifactory/petclinic-release-virtual</url>
+        </pluginRepository>
+        <pluginRepository>
+          <snapshots />
+          <id>snapshots</id>
+          <name>petclinic-snapshot-virtual</name>
+          <url>http://192.168.74.150:8081/artifactory/petclinic-snapshot-virtual</url>
+        </pluginRepository>
+      </pluginRepositories>
+      <id>artifactory</id>
+    </profile>
+  </profiles>
+  <activeProfiles>
+    <activeProfile>artifactory</activeProfile>
+  </activeProfiles>
+</settings>
