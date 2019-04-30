@@ -466,17 +466,19 @@
 
     <url>demopetclinic</url>
 
-                <!-- publish your project to Nexus  
-  <distributionManagement>
-    <repository>
-      <id>nexus-releases</id>
-      <url>http://192.168.74.132:8081/repository/Petclinic-Release/</url>
-    </repository>
+                <!-- publish your project to artifactory  -->
+<distributionManagement>
     <snapshotRepository>
-      <id>nexus-snapshots</id>
-      <url>http://192.168.74.132:8081/repository/Petclinic-Snap/</url>
+        <id>snapshots</id>
+        <name>ubuntuvm-snapshots</name>
+        <url>http://192.168.74.150:8081/artifactory/petclinic-snapshot-local</url>
     </snapshotRepository>
-  </distributionManagement>
--->
+    <repository>
+        <id>central</id>
+        <name>ubuntuvm-releases</name>
+        <url>http://192.168.74.150:8081/artifactory/petclinic-release-local</url>
+    </repository>
+</distributionManagement>
+
   
 </project>
