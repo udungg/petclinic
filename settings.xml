@@ -4,12 +4,12 @@
   <servers>
     <server>
       <username>admin</username>
-      <password>APA6cYKtqR5ZtjYctQ2CdQexaxq</password>
+      <password>AP33ood81PycNivEyXRpk3upHk9</password>
       <id>central</id>
     </server>
     <server>
       <username>admin</username>
-      <password>APA6cYKtqR5ZtjYctQ2CdQexaxq</password>
+      <password>AP33ood81PycNivEyXRpk3upHk9</password>
       <id>snapshots</id>
     </server>
   </servers>
@@ -21,14 +21,14 @@
             <enabled>false</enabled>
           </snapshots>
           <id>central</id>
-          <name>petclinic-release-virtual</name>
-          <url>http://192.168.74.150:8081/artifactory/petclinic-release-virtual</url>
+          <name>libs-release</name>
+          <url>http://192.168.74.161:8081/artifactory/libs-release</url>
         </repository>
         <repository>
           <snapshots />
           <id>snapshots</id>
-          <name>petclinic-snapshot-virtual</name>
-          <url>http://192.168.74.150:8081/artifactory/petclinic-snapshot-virtual</url>
+          <name>libs-snapshot</name>
+          <url>http://192.168.74.161:8081/artifactory/libs-snapshot</url>
         </repository>
       </repositories>
       <pluginRepositories>
@@ -37,14 +37,14 @@
             <enabled>false</enabled>
           </snapshots>
           <id>central</id>
-          <name>petclinic-release-virtual</name>
-          <url>http://192.168.74.150:8081/artifactory/petclinic-release-virtual</url>
+          <name>libs-release</name>
+          <url>http://192.168.74.161:8081/artifactory/libs-release</url>
         </pluginRepository>
         <pluginRepository>
           <snapshots />
           <id>snapshots</id>
-          <name>petclinic-snapshot-virtual</name>
-          <url>http://192.168.74.150:8081/artifactory/petclinic-snapshot-virtual</url>
+          <name>libs-snapshot</name>
+          <url>http://192.168.74.161:8081/artifactory/libs-snapshot</url>
         </pluginRepository>
       </pluginRepositories>
       <id>artifactory</id>
