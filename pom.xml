@@ -470,12 +470,12 @@
 <distributionManagement>
     <snapshotRepository>
         <id>snapshots</id>
-        <name>ubuntuvm-snapshots</name>
+        <name>jfrog-vm-snapshots</name>
         <url>>http://192.168.74.161:8081/artifactory/libs-snapshot-local</url>
     </snapshotRepository>
     <repository>
         <id>central</id>
-        <name>ubuntuvm-releases</name>
+        <name>jfrog-vm-snapshots</name>
         <url>http://192.168.74.161:8081/artifactory/libs-release-local</url>
     </repository>
 </distributionManagement>
