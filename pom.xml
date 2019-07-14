@@ -471,12 +471,12 @@
     <snapshotRepository>
         <id>snapshots</id>
         <name>ubuntuvm-snapshots</name>
-        <url>http://192.168.74.150:8081/artifactory/petclinic-snapshot-local</url>
+        <url>>http://192.168.74.161:8081/artifactory/libs-snapshot-local</url>
     </snapshotRepository>
     <repository>
         <id>central</id>
         <name>ubuntuvm-releases</name>
-        <url>http://192.168.74.150:8081/artifactory/petclinic-release-local</url>
+        <url>http://192.168.74.161:8081/artifactory/libs-release-local</url>
     </repository>
 </distributionManagement>
 
