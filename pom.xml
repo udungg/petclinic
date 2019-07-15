@@ -324,7 +324,7 @@
                                 <snapshotRepoKey>libs-snapshot-local</snapshotRepoKey>
                             </publisher>
                             <buildInfo>
-                                <buildName>plugin-demo</buildName>
+                                <buildName>${buildname}</buildName>
                                 <buildNumber>${buildnumber}</buildNumber>
                             </buildInfo>
                             <licenses>
