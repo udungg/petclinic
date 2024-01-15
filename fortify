@@ -1,0 +1,26 @@
+node {
+    def mvnHome
+    stage('Preparation') { // for display purposes
+        echo "git clone"
+    }
+    stage('compile') {
+        echo "compile app"
+    }
+    stage('SAST') {
+        fortifyClean addJVMOptions: '', buildID: 'petclinic', logFile: '', maxHeap: ''
+        fortifyTranslate addJVMOptions: '', buildID: 'petclinic', excludeList: '', logFile: '', maxHeap: '', projectScanType: fortifyMaven3(mavenOptions: 'package -DskipTests -Dmaven.test.skip=true')
+        fortifyRemoteScan buildID: 'petclinic', uploadSSC: [appName: 'petclinic', appVersion: '1.0']
+    }
+    stage('Build Container Image') {
+        echo "sast"
+    }
+    stage('Push Container Image') {
+        echo "sast"
+    }
+    stage('Deploy to Openshift') {
+        echo "sast"
+    }
+    stage('DAST') {
+        echo "sast"
+    }
+}
