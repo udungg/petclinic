@@ -13,15 +13,17 @@ node {
         fortifyRemoteScan buildID: 'petclinic', uploadSSC: [appName: 'petclinic', appVersion: '1.0']
     }
     stage('Build Container Image') {
-        echo "sast"
+        echo "build image"
     }
     stage('Push Container Image') {
-        echo "sast"
+        echo "push"
     }
     stage('Deploy to Openshift') {
-        echo "sast"
+        echo "deploy"
     }
     stage('DAST') {
-        echo "sast"
+        sh """
+        curl -X 'POST' 'http://10.35.55.88:64814/api/v2/scans/17/rescan' -H 'accept: text/plain' -H 'Authorization: FORTIFYTOKEN OTFhY2UyMDMtMDA5NC00OTQ0LTgyNGUtZjM2MzgzYmFmOGM1' -H 'Content-Type: application/json-patch+json' -d '{"name": "altoro-cicd-$BUILD_TIMESTAMP","scannerId": 5,"useAssignedScannerOnly": true}'
+        """
     }
 }
